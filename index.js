@@ -3,7 +3,7 @@ const app = express();
 const randomItem = require('random-item');
 
 
-app.get('/'), (req, res) => {
+app.get('/homepage'), (req, res) => {
   res.render('homepage', { choices });
 }
 
@@ -31,7 +31,6 @@ function userVsComputer(userChoice, computerChoice) {
 
     return result;
 }
-
 
 app.set('view engine', 'pug');
 

@@ -4,7 +4,8 @@
   "description": "Build a rock-paper-scissors game composed of two pages.\r On the first page, the user should be able to select an option (whether rock, paper or scissors).\r When the user choose an option, he should be redirected to another page.\r On that page he should see the option he picked, the option the computer picked and if he won, lost or if it's a draw.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
