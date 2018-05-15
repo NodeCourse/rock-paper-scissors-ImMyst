@@ -7,6 +7,50 @@ body {
   font-size: 50px;
 }
 
+@keyframes left-image {
+  0% {
+    transform: translateX(0px);
+  }
+
+  50% {
+    transform: translateX(150px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes right-image {
+  0% {
+    transform: translateX(0px);
+  }
+
+  50% {
+    transform: translateX(-150px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.left-image {
+  animation-duration: 0.5s;
+  animation-name: left-image;
+  animation-iteration-count: 1;
+}
+
+.right-image {
+  animation-duration: 0.5s;
+  animation-name: right-image;
+  animation-iteration-count: 1;
+}
+
+.vs {
+  transform: scale(0.5);
+}
+
 .try {
   font-size: 40px;
   text-decoration: none;
