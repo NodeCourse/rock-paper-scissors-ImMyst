@@ -3,6 +3,16 @@ body {
   font-family: Montserrat;
 }
 
+.main-title {
+  font-size: 75px;
+  font-weight: 900;
+}
+
 .choice-title {
   font-size: 50px;
+  font-style: italic;
+}
+
+.image:hover {
+  transform: scale(1.1);
 }
