@@ -3,6 +3,15 @@ body {
   font-family: Montserrat;
 }
 
+.result {
+  font-size: 50px;
+}
+
 .try {
-  font-size: 20px;
+  font-size: 40px;
+  text-decoration: none;
+}
+
+.try:hover {
+  text-decoration: underline orange;
 }

@@ -8,8 +8,7 @@ app.get('/'), (req, res) => {
 }
 
 const choices = ['rock', 'paper', 'scissors'];
-const results = ['Égalité !', 'Gagné !', 'Perdu !'];
-var computerChoice = randomItem(choices);
+const results = ['Égalité !', 'Bien joué !', 'Dommage !'];
 
 function userVsComputer(userChoice, computerChoice) {
     var result;
@@ -43,7 +42,8 @@ app.get('/homepage', (req, res) => {
 });
 
 app.get('/:choice', (req, res) => {
-    res.render('choice', { choice: req.params.choice });
+  var computerChoice = randomItem(choices);
+    res.render('choice', { choice: req.params.choice, computer: computerChoice, result: userVsComputer(req.params.choice, computerChoice)});
 });
 
 app.listen(3000);

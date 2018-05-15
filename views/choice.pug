@@ -6,7 +6,12 @@ html
     body
         main
           center
-            h1(id='result')
+            h1(class="result") #{result}
+            br
+            br
             img(src="img/" + choice + ".png")
+            img(src="img/" + computer + ".png")
+            br
+            br
             br
             a(class="try" href="homepage") Rejouer
